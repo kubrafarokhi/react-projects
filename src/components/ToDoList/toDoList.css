@@ -1,0 +1,16 @@
+.text-input{
+    padding: 10px 2px;
+    border-radius: 5px;
+    width: 200px;
+}
+.add-btn{
+    position: relative;
+    right: 20px;
+}
+.c-button{
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}

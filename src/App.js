@@ -11,6 +11,8 @@ import CakeComponent from "./components/Redux/CakeComponent";
 import HooksCakeContainer from './components/Redux/HooksCakeContainer';
 import NewCakeContainer from './components/Redux/NewCakeContainer';
 import ItemContainer from './components/Redux/ItemContainer';
+import FolderApp from './components/FolderApp/FolderApp';
+import explorer from "./components/FolderApp/data/data";
 
 import "./App.css";
 
@@ -26,11 +28,22 @@ function App() {
         <br />
         <ToDoList />
         <br />
+        <br />
+        <br />
+         Redux: Tutorial
         <CakeComponent />
         <HooksCakeContainer/>
         <NewCakeContainer/>
         <ItemContainer/>
         <ItemContainer/>
+        <br/>
+        <br />
+        <br />
+        <br />
+        <div style={{border:'1px solid black', width: '800px', height: '400px'}}>
+          <FolderApp  explorer={explorer}/>
+        </div>
+       
       </div>
     </Provider>
   );

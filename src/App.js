@@ -40,7 +40,7 @@ function App() {
         <br />
         <br />
         <br />
-        <div style={{border:'1px solid black', width: '800px', height: '400px'}}>
+        <div style={{border:'1px solid black', width: '800px', height: '200px'}}>
           <FolderApp  explorer={explorer}/>
         </div>
        

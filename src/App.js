@@ -13,7 +13,9 @@ import NewCakeContainer from './components/Redux/NewCakeContainer';
 import ItemContainer from './components/Redux/ItemContainer';
 import FolderApp from './components/FolderApp/FolderApp';
 import explorer from "./components/FolderApp/data/data";
-
+import SimpleUseReducer from './components/Hooks/reducer/SimpleUseReducer';
+import ComplexUseReducer from './components/Hooks/reducer/ComplexUseReducer';
+import MultipleUseReducer from './components/Hooks/reducer/MultipleUseReducer';
 import "./App.css";
 
 function App() {
@@ -43,7 +45,9 @@ function App() {
         <div style={{border:'1px solid black', width: '800px', height: '200px'}}>
           <FolderApp  explorer={explorer}/>
         </div>
-       
+       <SimpleUseReducer/>
+       <ComplexUseReducer/>
+       <MultipleUseReducer/>
       </div>
     </Provider>
   );

@@ -15,14 +15,20 @@ import FolderApp from './components/FolderApp/FolderApp';
 import explorer from "./components/FolderApp/data/data";
 import SimpleUseReducer from './components/Hooks/reducer/SimpleUseReducer';
 import ComplexUseReducer from './components/Hooks/reducer/ComplexUseReducer';
-import MultipleUseReducer from './components/Hooks/reducer/MultipleUseReducer';
+import MultipleUseReducer from './components/Hooks/reducer/MultipleUseReducers';
+import SearchwithFilter from './common/AutoCompleteSearch/SearchwithFilter';
+import AutocompleteDebounce from './common/AutocompleteDebounce/AutocompleteDebounce';
+import ToastContainer from './common/ToastContainer/ToastContainer';
+import ModalContainer from './common/Modal/index';
+import Dropdown from './common/Dropdown/Dropdown';
+
 import "./App.css";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <CountDownTimer />
+        {/* <CountDownTimer />
         <br />
         <StopWatch />
         <TimerClock />
@@ -48,6 +54,18 @@ function App() {
        <SimpleUseReducer/>
        <ComplexUseReducer/>
        <MultipleUseReducer/>
+       <br/>
+        <br />
+        <br />
+        <br /> */}
+       {/* <AutoCompleteSearch/> */}
+       {/* <AutocompleteDebounce/> */}
+       {/* <ToastContainer/> */}
+       <ModalContainer/>
+       <Dropdown/>
+       <br/>
+        <br />
+      
       </div>
     </Provider>
   );

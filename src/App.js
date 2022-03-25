@@ -21,6 +21,10 @@ import AutocompleteDebounce from './common/AutocompleteDebounce/AutocompleteDebo
 import ToastContainer from './common/ToastContainer/ToastContainer';
 import ModalContainer from './common/Modal/index';
 import Dropdown from './common/Dropdown/Dropdown';
+import AnalogClock from './common/AnalogClock/AnalogClock';
+import SpecialAnalogClock from './common/SpecialAnalogClock/SpecialAnalogClock';
+import Axios from './axiosCrud/Axios';
+
 
 import "./App.css";
 
@@ -61,8 +65,13 @@ function App() {
        {/* <AutoCompleteSearch/> */}
        {/* <AutocompleteDebounce/> */}
        {/* <ToastContainer/> */}
-       <ModalContainer/>
-       <Dropdown/>
+       {/* <ModalContainer/>
+       <Dropdown/> */}
+       {/* <AnalogClock/> */}
+       {/* <SpecialAnalogClock label={'India'} timeDiff={{hours: 0, minutes: 0}}/> */}
+       {/* <SpecialAnalogClock label={'WashingTon DC'} timeDiff={{hours: 9, minutes: 30}}/>
+       <SpecialAnalogClock label={'Australia'} timeDiff={{hours: 5, minutes: 30}}/> */}
+       <Axios/>
        <br/>
         <br />
       

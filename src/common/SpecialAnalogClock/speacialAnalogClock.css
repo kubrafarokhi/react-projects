@@ -1,0 +1,30 @@
+
+.hours-hand {
+  position: relative;
+  width: 6px;
+  height: 60px;
+  background: #222;
+  top: 25%;
+  left: 49%;
+  transform-origin: bottom;
+}
+
+.minutes-hand {
+  position: relative;
+  width: 4px;
+  height: 80px;
+  background: #444;
+  top: -6%;
+  left: 48%;
+  transform-origin: bottom;
+}
+
+.seconds-hand {
+  position: relative;
+  width: 2px;
+  height: 118px;
+  background: red;
+  top: -54%;
+  left: 50%;
+  transform-origin: bottom;
+}

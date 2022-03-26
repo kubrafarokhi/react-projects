@@ -1,5 +1,5 @@
 import { Provider } from "react-redux";
-import store from './redux/store';
+import store from "./redux/store";
 
 import StopWatch from "./components/StopWatch/StopWatch";
 import CountDownTimer from "./components/CountDownTimer/CountDownTimer";
@@ -8,24 +8,29 @@ import Counter from "./components/Counter/Counter";
 import ToDoList from "./components/ToDoList/ToDoList";
 
 import CakeComponent from "./components/Redux/CakeComponent";
-import HooksCakeContainer from './components/Redux/HooksCakeContainer';
-import NewCakeContainer from './components/Redux/NewCakeContainer';
-import ItemContainer from './components/Redux/ItemContainer';
-import FolderApp from './components/FolderApp/FolderApp';
+import HooksCakeContainer from "./components/Redux/HooksCakeContainer";
+import NewCakeContainer from "./components/Redux/NewCakeContainer";
+import ItemContainer from "./components/Redux/ItemContainer";
+import FolderApp from "./components/FolderApp/FolderApp";
 import explorer from "./components/FolderApp/data/data";
-import SimpleUseReducer from './components/Hooks/reducer/SimpleUseReducer';
-import ComplexUseReducer from './components/Hooks/reducer/ComplexUseReducer';
-import MultipleUseReducer from './components/Hooks/reducer/MultipleUseReducers';
-import SearchwithFilter from './common/AutoCompleteSearch/SearchwithFilter';
-import AutocompleteDebounce from './common/AutocompleteDebounce/AutocompleteDebounce';
-import ToastContainer from './common/ToastContainer/ToastContainer';
-import ModalContainer from './common/Modal/index';
-import Dropdown from './common/Dropdown/Dropdown';
-import AnalogClock from './common/AnalogClock/AnalogClock';
-import SpecialAnalogClock from './common/SpecialAnalogClock/SpecialAnalogClock';
-import Axios from './axiosCrud/Axios';
+import SimpleUseReducer from "./components/Hooks/reducer/SimpleUseReducer";
+import ComplexUseReducer from "./components/Hooks/reducer/ComplexUseReducer";
+import MultipleUseReducer from "./components/Hooks/reducer/MultipleUseReducers";
+import SearchwithFilter from "./common/AutoCompleteSearch/SearchwithFilter";
+import AutocompleteDebounce from "./common/AutocompleteDebounce/AutocompleteDebounce";
+import ToastContainer from "./common/ToastContainer/ToastContainer";
+import ModalContainer from "./common/Modal/index";
+import Dropdown from "./common/Dropdown/Dropdown";
+import AnalogClock from "./common/AnalogClock/AnalogClock";
+import SpecialAnalogClock from "./common/SpecialAnalogClock/SpecialAnalogClock";
+import Axios from "./axiosCrud/Axios";
+import { Tabs, Tab } from "./common/Tab/Tab";
+import ButtonLoadingSpinner from "./common/ButtonLoadingSpinner/LoadingSpinner";
+import SimpleProgressBar from "./common/SimpleProgressBar/SimpleProgressBar";
 
-
+import StarComponentContainer from "./common/StarComponent/StarComponentContainer";
+import TicTacToe from "./common/TicTacToe/TicTacToe";
+import FileUpload from './common/FileUpload/FileUpload';
 import "./App.css";
 
 function App() {
@@ -62,19 +67,35 @@ function App() {
         <br />
         <br />
         <br /> */}
-       {/* <AutoCompleteSearch/> */}
-       {/* <AutocompleteDebounce/> */}
-       {/* <ToastContainer/> */}
-       {/* <ModalContainer/>
+        {/* <AutoCompleteSearch/> */}
+        {/* <AutocompleteDebounce/> */}
+        <SearchwithFilter/>
+        {/* <ToastContainer/> */}
+        {/* <ModalContainer/>
        <Dropdown/> */}
-       {/* <AnalogClock/> */}
-       {/* <SpecialAnalogClock label={'India'} timeDiff={{hours: 0, minutes: 0}}/> */}
-       {/* <SpecialAnalogClock label={'WashingTon DC'} timeDiff={{hours: 9, minutes: 30}}/>
+        {/* <AnalogClock/> */}
+        {/* <SpecialAnalogClock label={'India'} timeDiff={{hours: 0, minutes: 0}}/> */}
+        {/* <SpecialAnalogClock label={'WashingTon DC'} timeDiff={{hours: 9, minutes: 30}}/>
        <SpecialAnalogClock label={'Australia'} timeDiff={{hours: 5, minutes: 30}}/> */}
-       <Axios/>
-       <br/>
+        <Axios />
+        {/* <Tabs>
+          <Tab label={"tab 1"} tabName={"Tab 1"}>
+            <p>Recommended channels for you</p>
+          </Tab>
+          <Tab label={"tab 2"} tabName={"Tab 2"}>
+            <p>You haven't subscribed to any channel</p>
+          </Tab>
+          <Tab label={"tab 3"} tabName={"Tab 3"}>
+            <h5>Millions of subscribers</h5>
+          </Tab>
+        </Tabs>
         <br />
-      
+        <br />
+        <ButtonLoadingSpinner />
+        <StarComponentContainer />
+        <SimpleProgressBar />
+        <TicTacToe /> */}
+        <FileUpload/>
       </div>
     </Provider>
   );

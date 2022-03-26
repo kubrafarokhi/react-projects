@@ -1,9 +1,9 @@
 //https://stackblitz.com/edit/react-debounce-search-8ramgl?embed=1&file=src/App.js
 //https://www.youtube.com/watch?v=DTeY9psVDDg
 
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import SearchInput from "./views/SearchInput/SearchInput";
-import ListItem from "./views/ListItem.js/ListItem";
+import ListItem from "./views/ListItem/ListItem";
 import axios from "axios";
 import './AutocompleteDebounce.css';
 
@@ -35,16 +35,11 @@ const AutocompleteDebounce = () => {
   return (
     <div className="auto-wrapper">
       Google Search
-      <input
-        className="input-field"
-        type="text"
-        name="Search"
-        onChange={betterFunction}
-      />
+      <SearchInput betterFunction={betterFunction}/>
       {
-        <ul>
+        <ul className="ul-item">
           {results.map((item) => {
-            return <li key={item.id}>{item.name}</li>;
+              return <ListItem key={item.id} name={item.name}/>
           })}
         </ul>
       }

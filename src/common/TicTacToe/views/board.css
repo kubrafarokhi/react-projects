@@ -1,0 +1,8 @@
+.board {
+    display: grid;
+    grid-template: repeat(3, 0fr) / repeat(3, 1fr);
+    width: 160px;
+    height: auto;
+    margin: 0 auto;
+    background-color: thistle;
+  }

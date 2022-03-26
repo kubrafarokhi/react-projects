@@ -6,7 +6,8 @@ function Post() {
   const [gender, setGender] = useState('');
   const [selectedValue, setSelectedValue] = useState('grapefruit');
   const [isGoing, setIsGoing] = useState(false);
-  const [file, setFile] = useState(null);
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(firstName);
@@ -14,7 +15,6 @@ function Post() {
     console.log(gender)
     console.log(selectedValue)
     console.log(isGoing)
-    console.log(file)
   };
 
   return (
@@ -77,10 +77,6 @@ function Post() {
               <option value="mango">Mango</option>
             </select>
           </label>
-        </div>
-        <div className="form-div">
-          Upload File:
-          <input type="file" />
         </div>
         <input type="submit" value="Submit" />
       </form>

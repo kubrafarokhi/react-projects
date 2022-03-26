@@ -1,14 +1,14 @@
 import React from "react";
+import './searchInput.css';
 
-const SearchInput = ({value,onChangeText}) => {
+const SearchInput = ({betterFunction}) => {
   return (
     <>
       <input
         className="input-field"
         type="text"
-        value={value}
         name ="Search"
-        onChange={onChangeText}
+        onChange={betterFunction}
       />
     </>
   );

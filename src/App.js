@@ -36,6 +36,7 @@ import ScrollIndicator from './common/ScrollIndicator/ScrollIndicator';
 import DynamicHeightDiv from './common/DynamicHeightDiv/DynamicHeightDiv';
 import Accordian from './common/Accordian/Accordian';
 import DynamicElement from './common/DynamicElement/DynamicElement';
+import InfinteScroll from './common/InfinteScroll/InfinteScroll';
 
 import "./App.css";
 
@@ -107,7 +108,8 @@ function App() {
         {/* <ScrollIndicator/> */}
         {/* <DynamicHeightDiv/> */}
         {/* <Accordian/> */}
-        <DynamicElement/>
+        {/* <DynamicElement/> */}
+        <InfinteScroll/>
       </div>
     </Provider>
   );

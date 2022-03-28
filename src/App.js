@@ -31,19 +31,26 @@ import SimpleProgressBar from "./common/SimpleProgressBar/SimpleProgressBar";
 import StarComponentContainer from "./common/StarComponent/StarComponentContainer";
 import TicTacToe from "./common/TicTacToe/TicTacToe";
 import FileUpload from './common/FileUpload/FileUpload';
+import ToggleSwitch from './common/ToggleSwitch/ToggleSwitch';
+import ScrollIndicator from './common/ScrollIndicator/ScrollIndicator';
+import DynamicHeightDiv from './common/DynamicHeightDiv/DynamicHeightDiv';
+import Accordian from './common/Accordian/Accordian';
+import DynamicElement from './common/DynamicElement/DynamicElement';
+
 import "./App.css";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+      <ToDoList />
         {/* <CountDownTimer />
         <br />
         <StopWatch />
         <TimerClock />
         <Counter />
         <br />
-        <ToDoList />
+
         <br />
         <br />
         <br />
@@ -69,10 +76,10 @@ function App() {
         <br /> */}
         {/* <AutoCompleteSearch/> */}
         {/* <AutocompleteDebounce/> */}
-        <SearchwithFilter/>
+        {/* <SearchwithFilter/> */}
+        {/* <Dropdown/>  */}
         {/* <ToastContainer/> */}
         {/* <ModalContainer/>
-       <Dropdown/> */}
         {/* <AnalogClock/> */}
         {/* <SpecialAnalogClock label={'India'} timeDiff={{hours: 0, minutes: 0}}/> */}
         {/* <SpecialAnalogClock label={'WashingTon DC'} timeDiff={{hours: 9, minutes: 30}}/>
@@ -95,7 +102,12 @@ function App() {
         <StarComponentContainer />
         <SimpleProgressBar />
         <TicTacToe /> */}
-        <FileUpload/>
+        {/* <FileUpload/> */}
+        {/* <ToggleSwitch/> */}
+        {/* <ScrollIndicator/> */}
+        {/* <DynamicHeightDiv/> */}
+        {/* <Accordian/> */}
+        <DynamicElement/>
       </div>
     </Provider>
   );

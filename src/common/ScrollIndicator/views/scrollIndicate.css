@@ -1,0 +1,14 @@
+.progress-indicator-wrapper{
+    background-color: black;
+    height: 15px;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+.progress-main-style{
+    height: 15px;
+    background-color: lightseagreen;
+    width: 15%;
+}

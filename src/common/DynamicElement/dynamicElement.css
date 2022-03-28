@@ -1,0 +1,34 @@
+.container {
+    width: 80vw;
+    margin: 30px auto;
+  }
+  
+  .list {
+    list-style: none;
+    background: orange;
+    padding: 10px 30px;
+  }
+  
+  .item {
+    background: red;
+    color: white;;
+    box-shadow: 0 2px 4px #999;
+    padding: 10px 30px;
+    margin: 10px 0;
+  }
+  
+  .button {
+    border: none;
+    outline: none;
+    background: purple;
+    color: white;
+    padding: 10px 30px;
+  }
+  
+  .button:hover {
+    background: orange;
+  }
+  
+  h3 {
+    margin: 15px 0;
+  }

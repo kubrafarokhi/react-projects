@@ -25,6 +25,13 @@ const ToDoList = () => {
       setItems(newItems);
     }
   };
+  const editItem = (id) =>{
+    // let newEditItem =items.find((elem)=>{
+    //   return elem.id === id
+    // })
+    // setInput(newEditItem)
+
+  }
   const removeAll = () => {
     setItems([]);
   };
@@ -48,7 +55,7 @@ const ToDoList = () => {
         onChange={handleInputChange}
       />
       <i className="fa fa-plus add-btn" title="Add Item" onClick={addItem}></i>
-      <Items items={items} deleteItem={deleteItem} />
+      <Items items={items} deleteItem={deleteItem} editItem={editItem}/>
       <div className="show-items">
         <button className="c-button" onClick={removeAll}>Remove All</button>
       </div>

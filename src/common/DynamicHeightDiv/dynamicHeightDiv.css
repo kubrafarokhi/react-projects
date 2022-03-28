@@ -1,0 +1,11 @@
+.div-height{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+.expand{
+    height: 600px;
+}

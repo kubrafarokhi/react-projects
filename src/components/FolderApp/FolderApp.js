@@ -1,28 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-const FolderApp = ({explorer}) => {
-    const [expand, setExpand] = useState(false);
+const FolderApp = ({ explorer }) => {
+  const [expand, setExpand] = useState(true);
 
-  if(explorer.isFolder){
-      return (
-        <div>
-            <div onClick={()=>setExpand(!expand)} >
-                {explorer.name}
-            </div>
-            <div style={{display: expand ? 'block': 'none', paddingLeft: 20}}>
-                {
-                    explorer?.items.map((exp)=>{
-                        return <FolderApp explorer={exp}/>
-                    })
-                }
-            </div>
+  return (
+    <div style={{ paddingLeft: 30 }}>
+      <div
+        style={{ color: explorer.isFolder ? "blue" : "green" }}
+        onClick={() => setExpand(!expand)}
+      >
+        {explorer?.name}
+      </div>
+      {explorer.isFolder && (
+        <div
+          style={{
+            display: expand ? "block" : "none",
+            paddingLeft: 30
+          }}
+        >
+          {explorer?.items?.map((exp) => (
+            <FolderApp explorer={exp} />
+          ))}
         </div>
-      ) 
-  }else{
-      return (
-          <div>{explorer.name}</div>
-      )
-  }
-}
-
-export default FolderApp
+      )}
+    </div>
+  );
+};
+export default FolderApp;

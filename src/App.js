@@ -37,6 +37,7 @@ import DynamicHeightDiv from './common/DynamicHeightDiv/DynamicHeightDiv';
 import Accordian from './common/Accordian/Accordian';
 import DynamicElement from './common/DynamicElement/DynamicElement';
 import InfinteScroll from './common/InfinteScroll/InfinteScroll';
+import SideMenu from './common/SideMenu/SideMenu';
 
 import "./App.css";
 
@@ -109,7 +110,8 @@ function App() {
         {/* <DynamicHeightDiv/> */}
         {/* <Accordian/> */}
         {/* <DynamicElement/> */}
-        <InfinteScroll/>
+        {/* <InfinteScroll/> */}
+        <SideMenu/>
       </div>
     </Provider>
   );

@@ -4,21 +4,30 @@ import ClockImg from "./clock.jpeg";
 
 //https://codesandbox.io/s/opfcb?file=/src/App.js
 
-function SpecialAnalogClock({ label, timeDiff }) {
+//https://codesandbox.io/s/immutable-dawn-l695l4?file=/src/App.js.
+
+function SpecialAnalogClock({ label, country, timeZone }) {
+  //const [time, setTime] = useState( new Date().toLocaleString( 'en-IN','Asia/Kolkata'));
   const [time, setTime] = useState(new Date());
+ 
+  // const handleDate = () => {
+  //   const date = new Date();
+  //   date.setHours(date.getHours() + timeDiff.hours);
 
-  const handleDate = () => {
-    const date = new Date();
-    date.setHours(date.getHours() + timeDiff.hours);
-
-    // date.setMinutes(date.setMinutes() + timeDiff.minutes);
-    // date.setSeconds(date.setSeconds());
-    return date;
-  };
+  //   // date.setMinutes(date.setMinutes() + timeDiff.minutes);
+  //   // date.setSeconds(date.setSeconds());
+  //   return date;
+  // };
 
   useEffect(() => {
     let timerId = setInterval(() => {
-      setTime(handleDate);
+      console.log(111, new Date().toLocaleString(country, {
+        timeZone: timeZone
+      }))
+      const timeZoneDate = new Date().toLocaleString(country, {
+        timeZone: timeZone
+      })
+      setTime(new Date(timeZoneDate));
     }, 1000);
 
     return () => {

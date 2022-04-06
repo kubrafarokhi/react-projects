@@ -30,14 +30,14 @@ import SimpleProgressBar from "./common/SimpleProgressBar/SimpleProgressBar";
 
 import StarComponentContainer from "./common/StarComponent/StarComponentContainer";
 import TicTacToe from "./common/TicTacToe/TicTacToe";
-import FileUpload from './common/FileUpload/FileUpload';
-import ToggleSwitch from './common/ToggleSwitch/ToggleSwitch';
-import ScrollIndicator from './common/ScrollIndicator/ScrollIndicator';
-import DynamicHeightDiv from './common/DynamicHeightDiv/DynamicHeightDiv';
-import Accordian from './common/Accordian/Accordian';
-import DynamicElement from './common/DynamicElement/DynamicElement';
-import InfinteScroll from './common/InfinteScroll/InfinteScroll';
-import SideMenu from './common/SideMenu/SideMenu';
+import FileUpload from "./common/FileUpload/FileUpload";
+import ToggleSwitch from "./common/ToggleSwitch/ToggleSwitch";
+import ScrollIndicator from "./common/ScrollIndicator/ScrollIndicator";
+import DynamicHeightDiv from "./common/DynamicHeightDiv/DynamicHeightDiv";
+import Accordian from "./common/Accordian/Accordian";
+import DynamicElement from "./common/DynamicElement/DynamicElement";
+import InfinteScroll from "./common/InfinteScroll/InfinteScroll";
+import SideMenu from "./common/SideMenu/SideMenu";
 
 import "./App.css";
 
@@ -45,7 +45,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-      <ToDoList />
+        {/* <ToDoList /> */}
         {/* <CountDownTimer />
         <br />
         <StopWatch />
@@ -83,10 +83,19 @@ function App() {
         {/* <ToastContainer/> */}
         {/* <ModalContainer/>
         {/* <AnalogClock/> */}
-        {/* <SpecialAnalogClock label={'India'} timeDiff={{hours: 0, minutes: 0}}/> */}
-        {/* <SpecialAnalogClock label={'WashingTon DC'} timeDiff={{hours: 9, minutes: 30}}/>
-       <SpecialAnalogClock label={'Australia'} timeDiff={{hours: 5, minutes: 30}}/> */}
-        <Axios />
+        <SpecialAnalogClock
+          label={"India"}
+          country={"en-IN"}
+          timeZone={"Asia/Kolkata"}
+        />
+        <SpecialAnalogClock
+          label={"WashingTon DC"}
+          country={"en-GB"}
+          timeZone={"Europe/London"}
+          //datediff={-2}
+        />
+        {/* <SpecialAnalogClock label={'Australia'} timeDiff={{hours: 5, minutes: 0}}/> */}
+        {/* <Axios /> */}
         {/* <Tabs>
           <Tab label={"tab 1"} tabName={"Tab 1"}>
             <p>Recommended channels for you</p>
@@ -111,7 +120,7 @@ function App() {
         {/* <Accordian/> */}
         {/* <DynamicElement/> */}
         {/* <InfinteScroll/> */}
-        <SideMenu/>
+        {/* <SideMenu/> */}
       </div>
     </Provider>
   );

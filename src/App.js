@@ -23,6 +23,7 @@ import ModalContainer from "./common/Modal/index";
 import Dropdown from "./common/Dropdown/Dropdown";
 import AnalogClock from "./common/AnalogClock/AnalogClock";
 import SpecialAnalogClock from "./common/SpecialAnalogClock/SpecialAnalogClock";
+import Caraousel from './common/Caraousel/Caraousel';
 import Axios from "./axiosCrud/Axios";
 import { Tabs, Tab } from "./common/Tab/Tab";
 import ButtonLoadingSpinner from "./common/ButtonLoadingSpinner/LoadingSpinner";
@@ -94,6 +95,7 @@ function App() {
           timeZone={"Europe/London"}
           //datediff={-2}
         />
+        <Caraousel/>
         {/* <SpecialAnalogClock label={'Australia'} timeDiff={{hours: 5, minutes: 0}}/> */}
         {/* <Axios /> */}
         {/* <Tabs>
